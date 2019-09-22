@@ -1,0 +1,22 @@
+.checked{
+  text-decoration: line-through;
+}
+
+ol li{
+  cursor: pointer;
+}
+
+
+
+
+.padding-25px, #app{
+  padding: 25px;
+}
+
+textarea{
+  padding: 15px;
+}
+
+button{
+  margin-bottom: 20px;
+}
