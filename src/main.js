@@ -3,19 +3,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 const KEY_FOR_LOC_STOR = "locComments";
 
-function Button() {
-  return (
-    <button>DELETE</button>
-  );
-}
-
 class Comments extends React.Component{
     constructor(){
     super();
       this.state = {
         comments: [{user: "", comment: "", date: "", deleteButton: "",}],
         deleteButton: "",
-        textAreaValue: "Какой-нибудь комментарий",
+        textAreaValue: "Комментарий",
         nameAreaValue: "Иванов",
       };
   }
@@ -82,9 +76,7 @@ class Comments extends React.Component{
           return (
             <div key={i}>
               {value.user}<br />{value.comment}<br />{value.date}
-              <div onClick={ev => {this.deleteComment(i);}}>
-                <Button />
-              </div>
+              <button onClick={ev => {this.deleteComment(i);}}>DELETE COMMENT</button>
             </div>
           );
         })}
